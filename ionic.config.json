@@ -1,0 +1,7 @@
+{
+  "name": "My Teeth",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

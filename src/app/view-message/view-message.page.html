@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true" *ngIf="set">
+  <ion-buttons>
+    <ion-back-button [text]="getBackButtonText()" defaultHref="/"></ion-back-button>
+  </ion-buttons>
+  <ion-slides pager="true">
+    <ion-slide *ngFor="let image of set.imageUrl">
+      <ion-card no-padding>
+          <ion-img [src]="image"></ion-img>
+      </ion-card>
+    </ion-slide>
+   </ion-slides>
+
+  
+  <div class="ion-padding">
+    <h1>{{ set.title }}</h1>
+    <p>
+      {{set.description}}
+    </p>
+  </div>
+</ion-content>
